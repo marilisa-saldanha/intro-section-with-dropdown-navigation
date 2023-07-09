@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-using-html-css-flexbox-and-js-XJBwcXsyOw)
+- [Live Site URL](https://marilisa-saldanha.github.io/intro-section-with-dropdown-navigation/)
 
 ## My process
 
