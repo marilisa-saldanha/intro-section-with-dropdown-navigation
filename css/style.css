@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+  /* Colors */
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.125rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  color: var(--medium-gray);
+}
+
+main {
+  min-height: 100vh;
+}
+
+main nav .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  height: 5rem;
+}
+
+main nav .container .left .links {
+  display: none;
+}
+
+main nav .container .mobileMenuIcon {
+  display: flex;
+  cursor: pointer;
+}
+
+main nav .container .mobileMenu {
+  background-color: var(--almost-white);
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  padding: 5rem 2rem;
+  justify-content: space-around;
+}
+
+main nav .container .mobileMenu .mobileButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main nav .container .mobileMenu .mobileButtons #btnMobileLogin {
+  background-color: transparent;
+  color: var(--medium-gray);
+  padding: .75rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 9rem;
+}
+
+main nav .container .mobileMenu .mobileButtons #btnMobileLogin:hover {
+  color: var(--almost-black);
+  font-weight: 700;
+}
+
+main nav .container .mobileMenu .mobileButtons #btnMobileRegister {
+  background-color: transparent;
+  color: var(--medium-gray);
+  padding: .75rem 1rem;
+  border: .125rem solid var(--medium-gray);
+  border-radius: .75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 9rem;
+}
+
+main nav .container .mobileMenu .mobileButtons #btnMobileRegister:hover {
+  color: var(--almost-black);
+  font-weight: 700;
+  border: .125rem solid var(--almost-black);
+}
+
+main nav .container .mobileMenu .closeMenu {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+main nav .container .mobileLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+main nav .container .mobileLinks li:hover {
+  color: var(--almost-black);
+}
+
+main nav .container .mobileLinks .subLink {
+  display: flex;
+  justify-content: left;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+main nav .container .mobileLinks .features {
+  display: block;
+}
+
+main nav .container .mobileLinks .features .mobFeatures {
+  display: none;
+  flex-direction: column;
+  gap: .75rem;
+  margin: 1rem;
+}
+
+main nav .container .mobileLinks .features img {
+  width: 1rem;
+}
+
+main nav .container .mobileLinks .company {
+  display: block;
+}
+
+main nav .container .mobileLinks .company .mobCompany {
+  display: none;
+  flex-direction: column;
+  gap: .75rem;
+  margin: 1rem;
+}
+
+main nav .container .mobileLinks .company img {
+  width: 1rem;
+}
+
+main nav .container .right {
+  display: none;
+}
+
+main .mainSection {
+  display: flex;
+  flex-direction: column;
+}
+
+main .mainSection .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+main .mainSection .content h1 {
+  color: var(--almost-black);
+  font-size: 2.2rem;
+}
+
+main .mainSection .content p {
+  color: var(--medium-gray);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+main .mainSection .content #btnLearnMore {
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .8rem 1rem;
+  border-radius: .75rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main .mainSection .content #btnLearnMore:hover {
+  background-color: var(--almost-white);
+  color: var(--almost-black);
+  border: .063rem solid var(--almost-black);
+}
+
+main .mainSection .content .adversiting {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1rem;
+}
+
+main .mainSection .content .adversiting img {
+  width: 75%;
+}
+
+.overflow {
+  background-color: black;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  opacity: 0.7;
+}
+
+footer {
+  color: var(--medium-gray);
+  text-align: center;
+  font-size: .9rem;
+  padding: .5rem 1rem;
+}
+
+footer .attribution a {
+  color: var(--almost-black);
+  font-weight: 700;
+}
+
+footer .attribution a:hover {
+  color: var(--medium-gray);
+}
+
+@media (min-width: 1024px) {
+  main nav .container {
+    padding: 2rem;
+    height: 6rem;
+  }
+
+  main nav .container .left {
+    display: flex;
+    align-items: center;
+  }
+
+  main nav .container .left .links {
+    display: flex;
+    margin-left: 4rem;
+    gap: 2.5rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  main nav .container .left .links .subMenu {
+    background-color: var(--almost-white);
+    position: absolute;
+    gap: .9rem;
+    box-shadow: 0 0 .625rem .010rem var(--almost-black);
+    border-radius: .2rem;
+    padding: 1rem;
+    top: 2rem;
+    right: 0;
+    display: none;
+    flex-direction: column;
+  }
+
+  main nav .container .left .links .one {
+    position: absolute;
+    right: 0;
+    width: 10rem;
+  }
+
+  main nav .container .left .links .two {
+    position: absolute;
+    right: -.5rem;
+    width: 8rem;
+  }
+
+  main nav .container .left .links .subMenu .subLink {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  main nav .container .left .links .featuresDesktop {
+    display: block;
+  }
+
+  main nav .container .left .links .companyDesktop {
+    display: block;
+  }
+
+  main nav .container .left .links li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+    user-select: none;
+  }
+
+  main nav .container .left .links li:hover {
+    color: var(--almost-black);
+  }
+
+  main nav .container .mobileMenuIcon {
+    display: none;
+  }
+
+  main nav .container .mobileMenu {
+    display: none;
+  }
+
+  main nav .container .right {
+    display: flex;
+    gap: 1rem;
+  }
+
+  main nav .container .right #btnLogin {
+    background-color: transparent;
+    color: var(--medium-gray);
+    padding: .75rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  main nav .container .right #btnLogin:hover {
+    color: var(--almost-black);
+    font-weight: 700;
+  }
+
+  main nav .container .right #btnRegister {
+    background-color: transparent;
+    color: var(--medium-gray);
+    padding: .75rem 1rem;
+    border: .063rem solid var(--medium-gray);
+    border-radius: .8rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  main nav .container .right #btnRegister:hover {
+    color: var(--almost-black);
+    font-weight: 700;
+    border-color: var(--almost-black);
+  }
+
+  main .mainSection {
+    flex-direction: row-reverse;
+    height: 38rem;
+    padding: 0 4rem;
+    justify-content: space-between;
+  }
+
+  main .mainSection picture img {
+    width: 28rem;
+    height: 38rem;
+  }
+  
+  main .mainSection .content {
+    width: 28rem;
+    padding: 0;
+    gap: 3rem;
+    margin-top: 0;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  main .mainSection .content h1 {
+    font-size: 4.2rem;
+    margin-top: 5rem;
+  }
+
+  main .mainSection .content p {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  main .mainSection .content #btnLearnMore {
+    font-size: 1rem;
+    padding: 1rem 1.8rem;
+    border-radius: .9rem;
+    font-size: 1rem;
+  }
+
+  main .mainSection .content #btnLearnMore:hover {
+    border: .125rem solid var(--almost-black);
+  }
+
+  main .mainSection .content .adversiting {
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 5rem;
+  }
+
+  main .mainSection .content .adversiting img {
+    width: 90%;
+  }
+
+  footer {
+    color: var(--medium-gray);
+    text-align: center;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  main .mainSection {
+    flex-direction: row-reverse;
+    height: 38rem;
+    padding: 0 6rem;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1350px) {
+  main .mainSection {
+    padding: 0 10rem;
+  }
+
+  main .mainSection .content {
+    width: 30rem;
+  }
+
+  main .mainSection .content h1 {
+    font-size: 4.5rem;
+    margin-top: 8rem;
+  } 
+
+  main .mainSection .content p {
+    font-size: 1.2rem;
+  }
+
+  main .mainSection .content .adversiting {
+    margin-top: 1rem;
+  }
+
+  main .mainSection .content .adversiting img {
+    width: 100%;
+  }
+}
